@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    
+</head>
+<header class="start">
+    <a href="attendee.html">
+        <p class="logo">ATTENDEE PORTAL</p>
+    </a>
+    <p class="attendee">Welcome to Attendee<br>The University's Culture</p>
+</header>
+
+<body>
+    <main class="accountmain">
+        <form action="account.html" method="post">
+            <h3 class="titleform">Membership Form<br>
+            Freshers kindly fill the form <br>
+        Welcome to the ATU'family and community</h3>
+            <div class="accountname">
+                <label for="username">Full Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="accountid">
+                <label for="studentid"> Student ID:</label>
+                <input type="text" id="studentid" name="studentid" pattern="[A-Za-z0-9]+" title="Only letters and numbers are allowed">
+            </div>
+            
+            <div class="accountemail">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="acountpassword">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="confirmpassword">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+                
+            <div class="login">
+                <label for="login">Log In</label>
+                <input type="checkbox" id="login" name="login" required>
+            </div>
+            <div class="Submit">
+                <button class="Submitbutton">Submit</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement</title>
+    <link rel="stylesheet" href="css/annoucemnet.css">
+</head>
+<header class="start">
+    <a href="attendee.html">
+        <p class="logo">ATTENDEE PORTAL</p>
+    </a>
+    <p class="attendee">Welcome to Attendee<br>The University's Culture</p>
+</header>
+
+<body>
+    <div class="Announcement_content">
+        <div class="announcement_header">
+            <h2 class="heading">Announcements</h2>
+            <div class="announcement_controls">
+                <input type="text" placeholder="Search announcements..." class="search_input">
+                <button class="add_button">Add New Announcement</button>
+            </div>
+        </div>
+
+        <div class="announcement_list">
+            <div class="announcement_item">
+                <h3 class="announcement_title">Important: Campus Closure</h3>
+                <p class="announcement_meta">Posted on 2025-09-15 by Administration</p>
+                <p class="announcement_body">Due to unforeseen circumstances, the campus will be closed today. All classes are canceled.</p>
+            </div>
+            <div class="announcement_item">
+                <h3 class="announcement_title">Student Union Meeting</h3>
+                <p class="announcement_meta">Posted on 2025-09-14 by Student Union</p>
+                <p class="announcement_body">There will be an important student union meeting on Friday at 3:00 PM in the Auditorium. All students are encouraged to attend.</p>
+            </div>
+        </div>
+
+        <form class="add_announcement_form" style="display: none;">
+            <h3>Add New Announcement</h3>
+            <input type="text" id="announcement_title" placeholder="Title" required>
+            <input type="text" id="announcement_author" placeholder="Author" required>
+            <textarea id="announcement_body" placeholder="Announcement body..." required></textarea>
+            <button type="submit">Submit Announcement</button>
+            <button type="button" class="cancel_button">Cancel</button>
+        </form>
+    </div>
+    <script src="js/announcement.js"></script>
+</body>
+</html>
